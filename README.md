@@ -1,6 +1,6 @@
 # My Personnal Page  
   
-objective : Create and update personnal page with who I am, my objective as developper, my compectences for employers  
+objective : Create and update personnal page with who I am, my objective as developper
   
 ## Presentation  
   
