@@ -1,0 +1,104 @@
+/* Page personnelle — styles.
+   Mardi : typographie, couleurs, espacements (« CSS from scratch »).
+*/
+
+:root {
+  /* 1.Palette limitee a trois couleurs +  une discrete */
+  --couleur-texte : #1a054f;
+  --couleur-fond : #d3c395;
+  --couleur-accent :#746ba4;
+  --couleur-discrete : #d9d4c7;
+
+
+  /* 2. Échelle d'espacements */
+  --espace-1 : 0.25rem;
+  --espace-2 : 0.5rem;
+  --espace-3 : 1rem;
+  --espace-4 : 1.5rem;
+  --espace-5 : 2.5rem;
+
+
+  /* 3. Echelle typographique */
+  --texte-petit:0.75rem;
+  --texte-normal:1rem;
+  --texte-grand:1.25rem;
+  --texte-titre:2rem;
+}
+
+
+body {
+   /* Colonne */
+   max-width: 75ch;
+   /* Marges intérieures */
+   padding: var(--espace-5) var(--espace-5);
+   /* Marges exterieures gauche/droite haut/bas*/
+   margin: 0 auto;
+   /* Taille du texte */
+   font-size: var(--texte-normal);
+   /* Couleur de texte et de fond */
+   color: var(--couleur-texte);
+}
+
+h1 {
+   font-size: var(--texte-titre);
+   /* Les valeurs fonctionne dans le sens des aiguilles d'un montre */
+   margin: var(--espace-2) var(--espace-5);
+   padding: 0 var(--espace-5);
+}
+
+h2 {
+   font-size: var(--texte-grand);
+   margin: var(--espace-3) var(--espace-5);
+}
+
+section {
+   background: var(--couleur-fond);
+   color: var(--couleur-texte);
+   border: var(--espace-1) solid var(--couleur-texte);
+   margin: var(--espace-3) auto;
+}
+
+p  {
+   margin: var(--espace-3) var(--espace-2)
+}
+
+form {
+   margin: var(--espace-1) var(--espace-3);
+}
+
+button {
+   /* Marges exterieures */
+   margin: var(--espace-3) auto;
+   /* Padding centré */
+   padding: var(--espace-2);
+   /* Déclarer les couleurs */
+   background: var(--couleur-accent);
+   color: var(--couleur-texte);
+   /* Annulation du soulignage */
+   text-decoration: none;
+   /* Font weight en bold (gras) car important */
+   font-weight: bold;
+   
+}
+
+
+footer {
+   background: var(--couleur-discrete);
+}
+
+  /* Jeudi : mise en page mobile first avec Flexbox ou Grid (« Layout Lab »). */
+
+nav {
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+}
+
+article {
+   display: grid;
+   /* Le premier fr est le dernier élément*/
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 2rem;
+}
+
+@media (min-width: 30rem) {  }
