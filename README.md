@@ -9,9 +9,13 @@ Always same pattern
 **Link to navigate throught page**  
 
 1 - Who I am  
+     *firstname, name*
 2 - My competences  
+     *names of programmation languages learned*  
 3 - My objectives and my progression  
-4 - How contact me (professionnal e-mail adress)  
+    *My principal objective, progression with exercices done*
+4 - How contact me
+    *Professionnal e-mail adress*
 
 *form is avaliable but not functionnable*  
   
