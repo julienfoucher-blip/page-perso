@@ -30,20 +30,23 @@ body {
    /* Colonne */
    max-width: 75ch;
    /* Marges intérieures */
-   padding: var(--espace-5) var(--espace-5);
+   padding: var(--espace-3) var(--espace-3);
    /* Marges exterieures gauche/droite haut/bas*/
    margin: 0 auto;
    /* Taille du texte */
    font-size: var(--texte-normal);
    /* Couleur de texte et de fond */
    color: var(--couleur-texte);
+   /* Couleur de fon de la page */
+   background-color: var(--couleur-discrete);
 }
 
 h1 {
+   display: flex;
+   justify-content: center;
    font-size: var(--texte-titre);
    /* Les valeurs fonctionne dans le sens des aiguilles d'un montre */
    margin: var(--espace-2) var(--espace-5);
-   padding: 0 var(--espace-5);
 }
 
 h2 {
@@ -58,6 +61,7 @@ section {
    color: var(--couleur-texte);
    border: var(--espace-1) solid var(--couleur-texte);
    margin: var(--espace-3) auto;
+   border-radius: 20px;
 }
 
 form {
@@ -74,6 +78,7 @@ p  {
 
 form {
    margin: var(--espace-1) var(--espace-3);
+   border-radius: 10px;
 }
 
 button {
@@ -83,7 +88,7 @@ button {
    padding: var(--espace-2);
    /* Déclarer les couleurs */
    background: var(--couleur-accent);
-   color: var(--couleur-texte);
+   color: white;
    /* Annulation du soulignage */
    text-decoration: none;
    /* Font weight en bold (gras) car important */
@@ -91,34 +96,32 @@ button {
    
 }
 
-
 footer {
    background: var(--couleur-discrete);
 }
 
   /* Jeudi : mise en page mobile first avec Flexbox ou Grid (« Layout Lab »). */
 
+  /* Navigation en display flex et un saut de ligne automatique */
 nav {
    display: flex;
    justify-content: center;
-   gap: 2rem;
+   gap: 0.5rem;
+   flex-wrap: wrap;
 }
 
-article {
+#presentation-list {
    display: grid;
    /* Le premier fr est le dernier élément*/
    grid-template-columns: 1fr 1fr 1fr;
    gap: 1.5rem;
 }
 
-@media (min-width: 30rem) {  }
-
-#projets {
-   display: flex;
-   justify-content: center;
+#competences-list {
+   display: grid;
+   /* Le premier fr est le dernier élément*/
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 1.5rem;
 }
 
-#contact {
-   display: flex;
-   justify-content: center;
-}
+@media (min-width: 30rem) { }

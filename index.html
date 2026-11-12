@@ -1,17 +1,14 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <!-- TODO: encodage, viewport, titre, lien vers style.css -->
     <meta charset="UTF-8">
-    <!-- définit l'affichage de la page, content = la taille -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de présentation</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- TODO: en-tête avec navigation, contenu principal (présentation, compétences,
-         projets, contact), pied de page -->
     <header>
+            <h1>Présentation d'un développeur</h1>
       <nav>
           <a href="#presentation">Présentation</a>
           <a href="#competences">Mes compétences</a>
@@ -21,10 +18,9 @@
       </nav>
     </header>
     <main>
-      <h1>Julien</h1>
       <section id="presentation">
         <h2>Présentation</h2>
-        <article>
+        <article id="presentation-list">
         <p>Nom : Foucher</p>
         <p>Prénom : Julien</p>
         <p>Métier : Développeur web</p>
@@ -32,31 +28,37 @@
       </section>
       <section id="competences">
                 <h2>Compétences</h2>
-        <article>
-        <p>Bases du HTML5</p>
-        <p>Bases du CSS3</p>
-        <p>Bases de JavaScript</p>
+        <article id="competences-list">
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>JavaScript</p>
+        <p>Quelques notions en Python</p>
         </article>
       </section>
       <section id="projets">
         <h2>Projets</h2>
-        <p>Devenir développeur web full-stack</p>
+        <br>
+        <p>Dans un objectif de devenir développeur full-stack, j'ai déjà travaillé sur du HTML, CSS et codé des algorithmes simples</p>
       </section>
       <section id="contact">
         <h2>Contact</h2>
+        <br>
         <p>e-mail pro : julien.foucher@institutsolacroup.com</p>
       </section>
       <form id="formulaire">
         <label for="nom">Votre nom</label>
-        <input type="text" id="nom" name="nom">
+        <input type="text" id="nom" name="nom" required>
         <br>
         <label for="e-mail">Votre adresse e-mail</label>
-        <input type="email" id="e-mail" name="e-mail">
+        <input type="email" id="e-mail" name="e-mail" required>
         <br>
+        <label for="zone">Zone de texte</label>
+        <textarea id="zone" name="zone"></textarea required>
         <button type="submit">Formulaire non fonctionnel</button>
       </form>
     </main>
     <footer>
+      mentions obligatoire dans un footer
     </footer>
   </body>
 </html>
