@@ -49,6 +49,8 @@ h1 {
 h2 {
    font-size: var(--texte-grand);
    margin: var(--espace-3) var(--espace-5);
+   display: flex;
+   justify-content: center;
 }
 
 section {
@@ -110,3 +112,13 @@ article {
 }
 
 @media (min-width: 30rem) {  }
+
+#projets {
+   display: flex;
+   justify-content: center;
+}
+
+#contact {
+   display: flex;
+   justify-content: center;
+}
