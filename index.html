@@ -13,38 +13,40 @@
          projets, contact), pied de page -->
     <header>
       <nav>
-          <a href="">Présentation</a>
-          <a href="">Mes compétences</a>
-          <a href="">Projets</a>
-          <a href="">Me contacter</a>
-          <a href="">Formulaire de contact</a>
+          <a href="#presentation">Présentation</a>
+          <a href="#competences">Mes compétences</a>
+          <a href="#projets">Projets</a>
+          <a href="#contact">Me contacter</a>
+          <a href="#formulaire">Formulaire de contact</a>
       </nav>
     </header>
     <main>
       <h1>Julien</h1>
-      <section>
+      <section id="presentation">
         <h2>Présentation</h2>
+        <article>
         <p>Nom : Foucher</p>
         <p>Prénom : Julien</p>
-        <img src="../image.png" alt="image de profil de solacroup">
-      </section>
-      <section>
-        <article>
-        <h2 id="titre-competences">Compétences</h2>
-        <p id="p-competence-html">Bases du HTML5</p>
-        <p id="p-competence-css">Bases du CSS3</p>
-        <p id="p-competence_js">Bases de JavaScript</p>
+        <p>Métier : Développeur web</p>
         </article>
       </section>
-      <section>
+      <section id="competences">
+                <h2>Compétences</h2>
+        <article>
+        <p>Bases du HTML5</p>
+        <p>Bases du CSS3</p>
+        <p>Bases de JavaScript</p>
+        </article>
+      </section>
+      <section id="projets">
         <h2>Projets</h2>
         <p>Devenir développeur web full-stack</p>
       </section>
-      <section>
+      <section id="contact">
         <h2>Contact</h2>
         <p>e-mail pro : caché</p>
       </section>
-      <form>
+      <form id="formulaire">
         <label for="nom">Votre nom</label>
         <input type="text" id="nom" name="nom">
         <br>

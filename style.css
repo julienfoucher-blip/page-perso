@@ -58,6 +58,14 @@ section {
    margin: var(--espace-3) auto;
 }
 
+form {
+   background: var(--couleur-fond);
+   color: var(--couleur-texte);
+   border: var(--espace-1) solid var(--couleur-texte);
+   margin: var(--espace-3) auto;
+   padding: var(--espace-5);
+}
+
 p  {
    margin: var(--espace-3) var(--espace-2)
 }
@@ -98,7 +106,7 @@ article {
    display: grid;
    /* Le premier fr est le dernier élément*/
    grid-template-columns: 1fr 1fr 1fr;
-   gap: 2rem;
+   gap: 1.5rem;
 }
 
 @media (min-width: 30rem) {  }
