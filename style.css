@@ -29,6 +29,11 @@
 body {
    /* Colonne */
    max-width: 75ch;
+   /* centré */
+   display: grid;
+   place-items: center;
+   align-items: center;
+   height: 100vh;
    /* Marges intérieures */
    padding: var(--espace-3) var(--espace-3);
    /* Marges exterieures gauche/droite haut/bas*/
@@ -39,6 +44,13 @@ body {
    color: var(--couleur-texte);
    /* Couleur de fon de la page */
    background-color: var(--couleur-discrete);
+}
+
+main {
+   background-color: var(--couleur-fond);
+   padding: 5rem;
+   border: 5px solid var(--couleur-texte);
+   border-radius: 15px;
 }
 
 h1 {
@@ -57,7 +69,7 @@ h2 {
 }
 
 section {
-   background: var(--couleur-fond);
+   background: var(--couleur-discrete);
    color: var(--couleur-texte);
    border: var(--espace-1) solid var(--couleur-texte);
    margin: var(--espace-3) auto;
@@ -65,15 +77,17 @@ section {
 }
 
 form {
-   background: var(--couleur-fond);
+   background: var(--couleur-discrete);
    color: var(--couleur-texte);
    border: var(--espace-1) solid var(--couleur-texte);
    margin: var(--espace-3) auto;
    padding: var(--espace-5);
+   border-radius: 15px;
 }
 
 p  {
-   margin: var(--espace-3) var(--espace-2)
+   margin: var(--espace-3) var(--espace-2);
+   border-radius: 15px;
 }
 
 form {
@@ -97,23 +111,15 @@ button {
 }
 
 footer {
-   background: var(--couleur-discrete);
+   background: var(--couleur-fond);
+   padding: 0.5rem;
 }
 
   /* Jeudi : mise en page mobile first avec Flexbox ou Grid (« Layout Lab »). */
 
-  /* Navigation en display flex et un saut de ligne automatique */
-nav {
+#presentation-list {
    display: flex;
    justify-content: center;
-   gap: 0.5rem;
-   flex-wrap: wrap;
-}
-
-#presentation-list {
-   display: grid;
-   /* Le premier fr est le dernier élément*/
-   grid-template-columns: 1fr 1fr 1fr;
    gap: 1.5rem;
 }
 
@@ -124,4 +130,8 @@ nav {
    gap: 1.5rem;
 }
 
-@media (min-width: 45rem) { }
+@media (min-width: 45rem) { 
+   header {
+      margin: 10rem;
+   }
+}
