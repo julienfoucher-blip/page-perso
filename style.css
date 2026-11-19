@@ -99,6 +99,7 @@ p  {
 }
 
 form {
+   padding: var(--espace-4);
    margin: var(--espace-1) var(--espace-3);
    border-radius: 10px;
 }
